@@ -1,0 +1,24 @@
+using System
+using System.Collections.Generic
+
+class Program {
+    static void Main() {
+        blat=new List<int>()
+        Thread.SetCount(3)
+        str="BLATABLAT"
+        split {
+            loop {
+                Console.WriteLine("Tom")
+            }
+        }
+        split {
+            loop {
+                Console.WriteLine(str)
+            }
+        }
+        
+        loop {
+            Console.WriteLine("Yanai")
+        }
+    }
+}

@@ -1,0 +1,50 @@
+using System
+
+import ("go")  {
+    import "runtime"
+    
+    func System_Thread_SetCount(count int) {
+        runtime.GOMAXPROCS(count)
+    }
+    func System_Console_WriteLine(text string) {
+        println(text)
+    }
+}
+
+import ("c") {
+    int add(int a,int b) {
+        return a+b;
+    }
+}
+
+namespace System {
+    class Object {
+    }
+    class CFunctionAttribute : Attribute {
+    }
+    class LanguageFunctions {
+        static void Split(Action action) {
+        }
+        static void Finally(Action action) {
+        }
+    }
+    class JunkClass {
+        static void System_Thread_SetCount(int c)
+        static void System_Console_WriteLine(string text)
+        static void @add(int a,b)
+    }
+    class Thread {
+        static void SetCount(int Count) {
+            JunkClass.System_Thread_SetCount(Count)
+        }
+    }
+    class Console {
+        static void WriteLine(string text) {
+            JunkClass.System_Console_WriteLine(text)
+        }
+    }
+    class DllFieldAttribute : Attribute {
+        DllFieldAttribute(int ID) {
+        }
+    }
+}
